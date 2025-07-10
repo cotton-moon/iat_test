@@ -19,7 +19,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//You can also do that from the outside, with a dedicated jsp file.
 		var iatObj =
 		{
-			fullscreen:false, //Should we show the task in full screen? A Qualtrics-only feature because in the usual Minno, we can go full-screen right at the beginning of the study.
+			fullscreen:true, //Should we show the task in full screen? A Qualtrics-only feature because in the usual Minno, we can go full-screen right at the beginning of the study.
         
 			isTouch:false, //Set whether the task is on a touch device.
 			//Set the canvas of the task
@@ -33,9 +33,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
-				name : 'test test', //Will appear in the data and in the default feedback message.
+				name : 'Black people', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Black people'}, //Name of the category presented in the task.
+					media : {word : 'Black people test'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -51,9 +51,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'test test', //Will appear in the data and in the default feedback message.
+				name : 'White people', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'White people'}, //Name of the category presented in the task.
+					media : {word : 'White people test'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -72,7 +72,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			{
 				name : 'Bad words',
 				title : {
-					media : {word : 'Bad words'},
+					media : {word : 'Bad words test'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -93,7 +93,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			{
 				name : 'Good words',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Good words test'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -134,7 +134,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			randomAttSide : false, // Accepts 'true' and 'false'. If false, then attribute2 on the right.
 
 			//Should we randomize which category is on the right first?
-			randomBlockOrder : true, //Accepts 'true' and 'false'. If false, then category1 on the left first.
+			randomBlockOrder : false, //Accepts 'true' and 'false'. If false, then category1 on the left first.
 			//Note: the player sends block3Cond at the end of the task (saved in the explicit table) to inform about the categories in that block.
 			//In the block3Cond variable: "att1/cat1,att2/cat2" means att1 and cat1 on the left, att2 and cat2 on the right.
 
