@@ -18,7 +18,11 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
     			{image : 'old6.jpg'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F',
+				       'font-size':'1.8em', 
+				       width: '200px',
+   	 				height: '250px',
+    					objectFit: 'cover'}
 		},	
 		category2 :	{
 			name : 'Young', //Will appear in the data.
@@ -35,7 +39,10 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
     			{image : 'young5.jpg'}, 
     			{image : 'young6.jpg'}			], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'1.8em',
+				      width: '200px',
+   	 				height: '250px',
+    					objectFit: 'cover'}
 		},	
 		attribute2 :
 			{
