@@ -120,7 +120,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			blockAttributes_nMiniBlocks : 5,
 			blockCategories_nTrials : 20,
 			blockCategories_nMiniBlocks : 5,
-			blockFirstCombined_nTrials : 20,
+			blockFirstCombined_nTrials : 60,
 			blockFirstCombined_nMiniBlocks : 5,
 			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).
 			blockSecondCombined_nMiniBlocks : 10, 
