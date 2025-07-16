@@ -963,8 +963,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
         //Count the number of blocks in this task
         var nBlocks = (globalObj.blockAttributes_nTrials<1 ? 0 : 1) + 
         (globalObj.blockCategories_nTrials<1 ? 0 : 1) + 
-        (globalObj.blockFirstCombined_nTrials<1 ? 0 : 2) + 
-        (globalObj.blockSecondCombined_nTrials<1 ? 0 : 2) + 
         (globalObj.blockSwitch_nTrials<1 ? 0 : 1);
 
 		//These parameters are used to create trials.
@@ -1075,7 +1073,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		}
 		//////////////////////////////
 		////Block 3: First combined block
-		var blockParamsCombined = {
+		/*var blockParamsCombined = {
 			nBlocks : nBlocks,
 			remindError : globalObj.remindError,
 			remindErrorText : globalObj.remindErrorText,
@@ -1114,7 +1112,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}
+		}*/
 		//////////////////////////////
 		////Second combined block.
 		blockParamsCombined.blockNum = iBlock;
@@ -1176,7 +1174,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////The other combined block
 		//Get the categories side from the switch block.
-		blockParamsCombined.right2 = blockParamsCats.right1;
+		/*blockParamsCombined.right2 = blockParamsCats.right1;
 		blockParamsCombined.left2 = blockParamsCats.left1;
 		blockCondition = blockParamsCombined.left2.name + '/' + blockParamsCombined.left1.name + ',' + blockParamsCombined.right2.name + '/' + blockParamsCombined.right1.name;
 		//Number variables.
@@ -1207,7 +1205,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}
+		}*/
 		//////////////////////////////
 		////Second combined block.
 		//Seventh block is another combined block.
