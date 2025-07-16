@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat1.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
