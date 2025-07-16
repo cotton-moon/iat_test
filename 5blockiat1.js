@@ -1076,7 +1076,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		}
 		//////////////////////////////
 		////Block 3: First combined block
-		/*var blockParamsCombined = {
+		var blockParamsCombined = {
 			nBlocks : nBlocks,
 			remindError : globalObj.remindError,
 			remindErrorText : globalObj.remindErrorText,
@@ -1115,7 +1115,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}*/
+		}
 		//////////////////////////////
 		////Second combined block.
 		blockParamsCombined.blockNum = iBlock;
@@ -1177,7 +1177,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////The other combined block
 		//Get the categories side from the switch block.
-		/*blockParamsCombined.right2 = blockParamsCats.right1;
+		blockParamsCombined.right2 = blockParamsCats.right1;
 		blockParamsCombined.left2 = blockParamsCats.left1;
 		blockCondition = blockParamsCombined.left2.name + '/' + blockParamsCombined.left1.name + ',' + blockParamsCombined.right2.name + '/' + blockParamsCombined.right1.name;
 		//Number variables.
@@ -1208,7 +1208,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}*/
+		}
 		//////////////////////////////
 		////Second combined block.
 		//Seventh block is another combined block.
