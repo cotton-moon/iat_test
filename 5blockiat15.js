@@ -124,7 +124,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			blockFirstCombined_nMiniBlocks : 1,
 			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).
 			blockSecondCombined_nMiniBlocks : 10, 
-			blockSwitch_nTrials : 24,
+			blockSwitch_nTrials : 12,
 			blockSwitch_nMiniBlocks : 1,
 
 			//Should we randomize which attribute is on the right, and which on the left?
