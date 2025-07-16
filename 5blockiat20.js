@@ -117,15 +117,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 			////If you set the number of trials in any block to 0, that block will be skipped.
 			blockAttributes_nTrials : 12,
-			blockAttributes_nMiniBlocks : 12,
+			blockAttributes_nMiniBlocks : 2,
 			blockCategories_nTrials : 12,
-			blockCategories_nMiniBlocks : 6,
+			blockCategories_nMiniBlocks : 2,
 			blockFirstCombined_nTrials : 24,
-			blockFirstCombined_nMiniBlocks : 6,
+			blockFirstCombined_nMiniBlocks : 4,
 			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).
 			blockSecondCombined_nMiniBlocks : 10, 
 			blockSwitch_nTrials : 12,
-			blockSwitch_nMiniBlocks : 6,
+			blockSwitch_nMiniBlocks : 2,
 
 			//Should we randomize which attribute is on the right, and which on the left?
 			randomAttSide : false, // Accepts 'true' and 'false'. If false, then attribute2 on the right.
