@@ -117,7 +117,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 			////If you set the number of trials in any block to 0, that block will be skipped.
 			blockAttributes_nTrials : 12,
-			blockAttributes_nMiniBlocks : 1,
+			blockAttributes_nMiniBlocks : 12,
 			blockCategories_nTrials : 12,
 			blockCategories_nMiniBlocks : 1,
 			blockFirstCombined_nTrials : 24,
