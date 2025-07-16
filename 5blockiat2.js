@@ -120,9 +120,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			blockAttributes_nMiniBlocks : 5,
 			blockCategories_nTrials : 20,
 			blockCategories_nMiniBlocks : 5,
-			blockFirstCombined_nTrials : 20,
+			blockFirstCombined_nTrials : 0,
 			blockFirstCombined_nMiniBlocks : 5,
-			blockSecondCombined_nTrials : 40, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).
+			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).
 			blockSecondCombined_nMiniBlocks : 10, 
 			blockSwitch_nTrials : 28,
 			blockSwitch_nMiniBlocks : 7,
@@ -961,11 +961,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var globalObj = piCurrent;
 
         //Count the number of blocks in this task
-        var nBlocks = (globalObj.blockAttributes_nTrials<1 ? 0 : 1) + 
-        (globalObj.blockCategories_nTrials<1 ? 0 : 1) + 
-        (globalObj.blockFirstCombined_nTrials<1 ? 0 : 2) + 
-        (globalObj.blockSecondCombined_nTrials<1 ? 0 : 2) + 
-        (globalObj.blockSwitch_nTrials<1 ? 0 : 1);
+        var nBlocks = 
+    (globalObj.blockAttributes_nTrials<1 ? 0 : 1) + 
+    (globalObj.blockCategories_nTrials<1 ? 0 : 1) + 
+    (globalObj.blockSwitch_nTrials<1 ? 0 : 1);
 
 		//These parameters are used to create trials.
 		var blockParamsAtts = {
@@ -1075,7 +1074,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		}
 		//////////////////////////////
 		////Block 3: First combined block
-		var blockParamsCombined = {
+		/*var blockParamsCombined = {
 			nBlocks : nBlocks,
 			remindError : globalObj.remindError,
 			remindErrorText : globalObj.remindErrorText,
@@ -1114,7 +1113,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}
+		}*/
 		//////////////////////////////
 		////Second combined block.
 		blockParamsCombined.blockNum = iBlock;
@@ -1176,7 +1175,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////The other combined block
 		//Get the categories side from the switch block.
-		blockParamsCombined.right2 = blockParamsCats.right1;
+		/*blockParamsCombined.right2 = blockParamsCats.right1;
 		blockParamsCombined.left2 = blockParamsCats.left1;
 		blockCondition = blockParamsCombined.left2.name + '/' + blockParamsCombined.left1.name + ',' + blockParamsCombined.right2.name + '/' + blockParamsCombined.right1.name;
 		//Number variables.
@@ -1207,7 +1206,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
-		}
+		}*/
 		//////////////////////////////
 		////Second combined block.
 		//Seventh block is another combined block.
