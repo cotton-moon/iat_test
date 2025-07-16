@@ -82,7 +82,10 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
-
+			blocks: {
+       				 nBlock3: 0,
+       				 nBlock6: 0
+   		 },
 		base_url : {//Where are your images at?
 			image : 'https://cotton-moon.github.io/iat_test/'
 		} 
