@@ -961,9 +961,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var globalObj = piCurrent;
 
         //Count the number of blocks in this task
-        var nBlocks = (globalObj.blockAttributes_nTrials<1 ? 0 : 1) + 
-        (globalObj.blockCategories_nTrials<1 ? 0 : 1) + 
-        (globalObj.blockSwitch_nTrials<1 ? 0 : 1);
+        var nBlocks = 
+    (globalObj.blockAttributes_nTrials<1 ? 0 : 1) + 
+    (globalObj.blockCategories_nTrials<1 ? 0 : 1) + 
+    (globalObj.blockFirstCombined_nTrials<1 ? 0 : 2) + 
+    (globalObj.blockSecondCombined_nTrials<1 ? 0 : 2) + 
+    (globalObj.blockSwitch_nTrials<1 ? 0 : 1);
 
 		//These parameters are used to create trials.
 		var blockParamsAtts = {
