@@ -5,7 +5,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 		category1 : {
 			name : 'Old', //Will appear in the data.
 			title : {
-				media : {word : 'Old'}, //Name of the category presented in the task.
+				media : {word : 'OLD'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -27,7 +27,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 		category2 :	{
 			name : 'Young', //Will appear in the data.
 			title : {
-				media : {word : 'Young'}, //Name of the category presented in the task.
+				media : {word : 'YOUNG'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -48,7 +48,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 			{
 				name : 'Active',
 				title : {
-					media : {word : 'Active'},
+					media : {word : 'ACTIVE'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -67,7 +67,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 			{
 				name : 'Inactive',
 				title : {
-					media : {word : 'Inactive'},
+					media : {word : 'INACTIVE'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
