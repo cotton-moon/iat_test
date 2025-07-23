@@ -3,7 +3,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 
 	return iatExtension({
 		category1 : {
-			name : 'Old', //Will appear in the data.
+			name : 'OLD', //Will appear in the data.
 			title : {
 				media : {word : 'OLD'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -25,7 +25,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
     					objectFit: 'cover'}
 		},	
 		category2 :	{
-			name : 'Young', //Will appear in the data.
+			name : 'YOUNG', //Will appear in the data.
 			title : {
 				media : {word : 'YOUNG'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -46,7 +46,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 		},	
 		attribute2 :
 			{
-				name : 'Active',
+				name : 'ACTIVE',
 				title : {
 					media : {word : 'ACTIVE'},
 					css : {color:'#0000FF','font-size':'1.8em'},
@@ -65,7 +65,7 @@ define(['pipAPI', 'https://cotton-moon.github.io/iat_test/5blockiat21.js'], func
 			},
 		attribute1 :
 			{
-				name : 'Inactive',
+				name : 'INACTIVE',
 				title : {
 					media : {word : 'INACTIVE'},
 					css : {color:'#0000FF','font-size':'1.8em'},
